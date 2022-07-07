@@ -83,9 +83,9 @@ while True:
         else:
             tx = "Pool dry, no payout TXID \:"
         print(submit.json())
-        print(f"{colorama.Fore.GREEN}Share accepted.", tx, colorama.Fore.RESET)
+        print(f"{colorama.Fore.GREEN}Share accepted. {tx}", colorama.Fore.RESET)
     else:
         print(f"{colorama.Fore.RED}Share rejected.{colorama.Fore.RESET}")
         time.sleep(25) # wait for unban
-    
+ 
     time.sleep(3) # dont overload pool
